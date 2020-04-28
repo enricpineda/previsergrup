@@ -1,0 +1,53 @@
+/*Etiquetes modificades*/
+h1,h2,h3,h4,h5,h6 {font-family: 'Abel', sans-serif; font-weight: bold; color: rgba(20,90,90,1);}
+body {font-family: 'Open Sans', sans-serif;}
+p {text-align: justify;}
+
+/*Classes*/
+.boto {border: 2px solid #fff;color: #fff; text-decoration: none; padding: 1em; }
+.boto:hover {background-color: #fff; color: #000;}
+.boto2 {border: 2px solid #fff;color: #fff; text-decoration: none; padding: 1em; }
+.boto2:hover {background-color: #fff; color: #000;}
+.menupral-portada {margin: 2em 0; padding: 0; list-style-type: none;}
+.menupral-portada ul {position: relative;}
+.menupral-portada li { margin: 1em; padding: 0;}
+.video-container {position: absolute;top: 0;bottom: 0;width: 100%;height: 100%;overflow: hidden;}
+.video-container video {min-width: 100%;min-height: 100%;width: auto;height: auto;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: -100;}
+.menupral-container {position: absolute;top: 0;bottom: 0;width: 100%;height: 100%; background-color: rgba(20,90,90,0.7);z-index: 1;padding: 2em;}
+.logo-portada {width: 100%; height: 100%;overflow: auto;margin: auto;position: absolute; top: 0; left: 0; bottom: 0; right: 0;text-align: center; color: #fff;}
+.super-titol {font-size: 5em; padding: 0.5em 0;}
+.quote {margin: 1em 0; border-top: 1px solid #999; border-bottom: 1px solid #999;padding: 1em 0;color: #999; font-style: italic;}
+.footer-interior {background-color: #000; padding: 1em;margin: 1em 0 0 0; color: #AAA;}
+.footer-interior a {color: #fff; text-decoration: none;}
+.text-petit-lopd {font-size:0.8em;}
+.text-blanc {color: #fff;}
+
+/*IDs*/
+#menu-mobil {z-index: 10000;}
+#barra-superior-interna {width: 100%; background-color: rgba(20,90,90,1); padding: 2em;}
+#canvia-idioma-portada {position: absolute; z-index:100000; }
+#serveis-destacat {width: auto; margin: 2em auto; padding: 1em 0 0 0; display: none;}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    
+    .logo-portada {width: 90%; }
+    .menupral-portada li {width: 90%; margin: 0.5em auto;}
+    .boto {width: 100%; display: block;}
+    .logo-portada {height: 90%;}
+    #menumobil {display: none;}
+    #canvia-idioma-portada {width: 100%; bottom: 20px; left: 0; text-align: center;}
+    .imatge-logo-portada {width: 90%; height: auto; margin: 1em 0;}
+    .boto {padding: 0.5em;}
+    h2 {font-size: 2em;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .menupral-portada li {display: inline; margin: 0 1em;}
+    .logo-portada h1 {margin: 1em 0;}
+    #canvia-idioma-portada {top: 0; right: 0; margin: 2em; }
+    .imatge-logo-portada {width: 60%; height: auto; margin: 1em 0;}
+}
+
+

@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(cat|es)$ index.php?lang=$1
+RewriteRule ^(.*)\/(cat|es)?/?$ interior.php?pagina=$1&lang=$2 [NC]

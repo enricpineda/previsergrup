@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Àrea restringida"
+AuthUserFile /home/epineda/.htpasswd
+require valid-user
